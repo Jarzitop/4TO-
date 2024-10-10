@@ -1,0 +1,28 @@
+HTML CSS
+
+HTML es un lenguaje de hipertexto con tags para definir la estructura del contenido del documento. 
+Un ejemplo de estructura pordira ser dos secciones principales, cada una con parrafos, una de las secciones tiene subsecciones y la otra tiene una tabla 
+
+Con CSS definimios el estilo estetico, por ejemplo, u color para el fondo, titulo, fuentes tipograficasy el tamaño de la letra 
+
+Estructura básica de HTML 
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8"/>
+  <title>Título de la Página</title>
+ </head>
+ <body>
+  <h1>Encabezado nivel 1</h1>
+  <p>Er zijn vele variaties van passages van Lorem Ipsum beschikbaar maar
+   het merendeel heeft te lijden gehad van wijzigingen in een of andere vorm, 
+   door ingevoegde humor of willekeurig gekozen woorden die nog niet half 
+   geloofwaardig ogen.
+  </p>
+ </body>
+</html>
+head: Contenedor de todas las etiquetas de configuracion de estilos, archivos javascript y metadata como  el titulo de la pagina y la 
+codificacion de caracteres utilizada
+body: contenedor de todas las etiquetas visuales de la página
+
+  
