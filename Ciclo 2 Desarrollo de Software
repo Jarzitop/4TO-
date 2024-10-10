@@ -25,4 +25,101 @@ head: Contenedor de todas las etiquetas de configuracion de estilos, archivos ja
 codificacion de caracteres utilizada
 body: contenedor de todas las etiquetas visuales de la página
 
-  
+  Elementos HTML 
+<table> el elemento table nos permite crear tablas, para crear filas tenemos <tr> r de row y para columnas tenemos <td> d de data
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th> 
+    <th>Usuario</th>
+  </tr>
+  <tr>
+     <td>María</td>
+    <td>Díaz</td>
+    <td>maria.diaz</td>
+  </tr>
+  <tr>
+    <td>Juan</td>
+    <td>Castro</td>
+    <td>juan.castro</td>
+  </tr>
+  <tr>
+    <td>Ernesto</td>
+    <td>Velez</td>
+    <td>ernesto.velez</td>
+  </tr>
+</table>
+
+Esto nos daría una tabla de la siguiente forma 
+
+NOMBRE  APELLIDO  USUARIO 
+María  Díaz       maria diaz 
+Juan   Castro     juan castro 
+Ernesto Velez     ernesto velez
+
+
+
+Para una imagen usamos el siguiente formato 
+<img src="https://media.istockphoto.com/id/1182337590/photo/bogota-cityscape-of-big-buildings-and-mountains-and-blue-sky.jpg?s=612x612&w=0&k=20&c=4iGqcn_Ibf7lNI1YrIXnfXrzE3SVx0JyFFel8g6y1qQ=" alt="Trulli" width="500" height="333"
+Para enlaces
+<a href="https://bloqueneon.uniandes.edu.co/" target="_blank">Bloqueneon Uniandes</a> 
+Para crear un formulario donde el usuario ingresa datos usamos lo siguiente 
+<!DOCTYPE html>
+<html>
+ <body>
+  <h2>Formulario HTML</h2>
+  <form>
+   Ciudad:
+   <br/>
+   <br/>
+   <input type="text" name="ciudad" value="Bogotá">
+   <br/>
+   <br/> Zipcode:
+   <br/>
+   <br/>
+   <input type="text" name="zipcode" value="1101001">
+   <br/>
+   <br/>
+   <input type="submit" value="Enviar">
+  </form>
+ </body>
+</html>
+
+El <br> nos permite dejar espacios en blanco para mejorar la estética
+
+
+Definición de estilos 
+CSS 
+<style>
+body {
+ background-color: lightyellow;
+}
+h1 {
+ color: black;
+ text-align: center;
+}
+
+p {
+ font-family: times;
+ font-size: 12px;
+}
+</style>
+
+La regla para body define el color de toda la página
+La regla h1 define el color de texto para los encabezados de primer nivel 
+Y la regla p define el tamaño y la fuente de todos los parrafos 
+
+p.centrado {
+ font-family: times;
+ font-size: 12px;
+ text-align: center
+}
+Aplicar a los parrafos el atributo class se denomina centrado
+
+Los estilos se definen en html preferiblemente en los tags de head y style
+<head>
+
+...
+<link rel="stylesheet" href="lib/style.css">
+...
+<\head>
