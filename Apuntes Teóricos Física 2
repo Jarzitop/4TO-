@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PRIMER TEMA 
+CARGA ELÉCTRICA 
+Conceptos clave: 
+  Carga electrica: Propiedad fisica de la materia que cause que se experimente una fuerza cuando se coloca en un campo eléctrico 
+  Ley de la conservacion de la Carga: La carga neta total en un sistema aislado se conserva 
+CONDUCTORES Y AISLANTES 
+  Conductores: Materiales que permiten el movimiento libre de cargas eléctricas
+  Aislantes; Materiales que no permiten el movimiento libre de cargas 
+CARGAS INDUCIDAS
+  Inducción Eléctrica: Proceso por el cual una carga eléctrica se redistribuye en un conductor debido a la presencia de una carga cercana 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SEGUNDO TEMA 
+Ley de Coulomb 
+La fuerza electrica entre dos cargas puntuales e sdirectamentes proporcional al productos de las manigtudes
+e inversamente proporcional a la distancia que las separa 
+
+F = k (q1q2/r**2) 
+
+Ejemplo práctico dos cargas  2C y -3C están separadas por una distancia de 0.5 m 
+= 0.2157 N 
+La dirección es dada por la carga que tenga una magnitud mayor 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TERCER TEMA 
+Conceptos clave: 
+  Campo Eléctrico: Región del espacio alrededor de una carga eléctrica donde otra carga experimenta una fuerza eléctrica 
+  Unidades: N/C o V/m 
+
+  Fórmula del Campo Eléctrico
+  Para una carga puntual 
+  E = k q/r**2
+  Las lineas del campo eléctrico representan la direccion y la densidad de las lineas indica la magnitud del campo
+
+  Dipolo Eléctrico: Sistema de dos cargas iguales y opuestas separadas por una distancia pequeña. 
+  El monmento dipolar esta definidio por p = qxd 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CUARTO TEMA 
+Cálculos de Campos Eléctricos con distribuciones Discretas y Continuas 
+  
+  Distribuciones discretas: Suma vectorial: El campo eléctrico total es la suma vectorial de los campos eléctricos debido a cada carga individual
+  Tres cargas puntuales de 1C están situadas en los vértices de un triángulo equilatero de lado a = 0.2m. 
+  El campo electrico del campo está dado por la suma de los campos eléctricos
+
+  Distribuciones continuas 
+  Integración: El campo eléctrico se calcula integrando sobre la distribución de carga 
+  Calcular el campo eléctrico en un punto P situado a una distancia x a los largo del eje de una barra lineal de longitud L con una densidad de carga uniforme 
+  Para hallar la solucion de este problema  
+  Debemos Dividir la barra en elementos diferenciales de carga = dq = lambdadx 
+  Hallar el campo diferencial dE usando dQ
+  Integramos de 0 a L 
+
+  E = Integral de 0 a L de (k*lambdadx)/(x+d/dx)**2
+---------------------------------------------------------------------------------------------------------------------------------------
+QUINTO TEMA 
+Ley de Gauss
+  El flujo eléctrico total a través de una superficie cerrada es igual a la carga neta encerrada dividida por la permitividad del vació
+  REVISAR MÁS TARDE 
+  
