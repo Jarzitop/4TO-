@@ -1,2 +1,86 @@
 @Autowired 
 Inyecta dependencias, es decir si tenemos una clase usuario que desea usar un usuarioRepository, en vez de instanciar podemos usar el Autowired para que Spring lo haga
+
+@Transactional 
+Indica que el método o clase debe ejecutarse dentro de una transacción. Una transacción asegura que una serie de operaciones de base de datos (como un conjunto de actualizaciones) se completen todas o ninguna. Esto es importante para evitar inconsistencias de datos.
+Ejemplo: Si tienes una operación de compra que implica actualizar varias tablas, puedes usar @Transactional para asegurarte de que si alguna parte del proceso falla, todo se deshaga.
+
+@Entity
+Indica que la clase será una entidad mapeada en la base de datos
+
+@Id
+Se utiliza dentro del @Entity para mostar cual es la llave primaria de la tabla 
+
+@GeneratedValue
+Especifica como se genera el valor de la llave primaria 
+
+@Repository
+Marca una clase como un componente de persistencia o repositorio que se utiliza para acceder a la base de datos 
+
+@Service 
+Se usa para marcar una clase como un servicio, lo que indica que contiene lógica de negocio 
+
+@RestController 
+Marca la clase como un controlador REST 
+
+@RequestMaping
+Se utiliza para manejar solicitudes HTTP como get,post,put y delete
+@GetMapping, @PostMapping, @PutMapping, @DeleteMapping
+
+@PathVariable
+Asocial el URL con el parametro del metodo 
+public UserDTO getUser(@PathVariable Long id) {
+    return userService.getUserById(id);
+
+
+@Data
+Genera getters,setters,metodos toString,equals
+
+Cascade 
+Es una opcion para las relaciones entre entidades, indica que tipo de operaciones se deben propagar desde la entidad principal a las que estan relacionadas con ella 
+es decir, si borramos una entidad personaNatural y tambien queremos borrar las SalidasPersonaNatural usamos CascadeType.REMOVE
+Y así con los otros usos del cascade
+
+Podam
+El podam genera datos de prueba automaticamente, es util en los test ya que puede generar instancias con valores aleatorios
+
+ModelMapper
+Es una biblioteca que mapea objetos de un tipo a otro cuando queremos transformar una entidad en un DTO
+
+REST
+Metodos como Get, Post,Put,Delete
+
+DTO 
+Un Dto pernite que las entidades de la base de datos no se expongan al cliente, una especie de mascara para mejorar la seguridad y el control de los datos 
+
+Postman
+En postman podemos hacer solicitudes HTTP, verificar las respuestas del servidor sin necesidad de haber hecho el frontend 
+Las URL de postman siempre son de la forma http://localhost:8000
+EJEMPLOS 
+GET
+http://localhost:8080/users
+GET BY ID 
+http://localhost:8080/users/{id}
+POST
+http://localhost:8080/users
+PUT USUARIO EXISTENTE
+http://localhost:8080/users{id}
+DELETE 
+http://localhost:8080/users/{id}
+
+
+
+En la arquitectura por capas tenemos los siguientes componentes
+
+Persistencia: Almacenar y recuperar datos, proporcionar acceso a la capa, y abstraer las operacines de capas sueriores 
+Gestiona la abse de datos y permite realizar operaciones CRUD
+
+Capa de Lógica
+Aplicar las reglas de negocio,validacion de datos y proceso de las transacciones, interacciones entre servicios 
+
+Capa de API 
+Intermediario entre la logica y la presentacion de la app, recibe solicitudes HTTP, las envia a la capa de logica para su procesamiento y devuelve un JSON o un XML 
+
+App
+Interfaz de usuario e interactua con la API para enviar u obtener datos 
+
