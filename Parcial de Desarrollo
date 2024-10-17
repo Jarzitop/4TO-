@@ -1,0 +1,2 @@
+@Autowired 
+Inyecta dependencias, es decir si tenemos una clase usuario que desea usar un usuarioRepository, en vez de instanciar podemos usar el Autowired para que Spring lo haga
