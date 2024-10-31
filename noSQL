@@ -1,1 +1,52 @@
+Modulo nuevo 
+Introducción a no SQL 
+Bases de datos no SQL, descripción y análisis, recopilación y definicion de algunas carateristicas de este tipo de bases de datos
+Documentales (Document-Based)
 
+Ejemplo: MongoDB, CouchDB.
+Almacenan datos en formato JSON, BSON o XML, donde cada "documento" es una estructura semi-estructurada que contiene pares clave-valor.
+Útiles para aplicaciones que requieren flexibilidad en el esquema, como las aplicaciones web y los sistemas de gestión de contenido.
+Claves-Valor (Key-Value)
+
+Ejemplo: Redis, DynamoDB.
+Utilizan un esquema muy simple de pares clave-valor, ideal para acceder rápidamente a datos usando una clave única.
+Son muy eficientes para aplicaciones de almacenamiento en caché, sesiones de usuario y análisis en tiempo real.
+Columnares (Wide-Column Stores)
+
+Ejemplo: Cassandra, HBase.
+Organizan los datos en filas y columnas, permitiendo almacenar millones de columnas en una sola tabla.
+Se usan en análisis de grandes volúmenes de datos y aplicaciones que requieren consultas de agregación en grandes conjuntos de datos.
+Grafos (Graph-Based)
+
+Ejemplo: Neo4j, Amazon Neptune.
+Están diseñadas para manejar relaciones complejas mediante estructuras de nodos y aristas, ideales para aplicaciones que necesitan modelar redes, como redes sociales o recomendaciones.
+Características de las Bases NoSQL
+Escalabilidad Horizontal: Se pueden expandir fácilmente agregando más servidores, lo que las hace adecuadas para gestionar grandes volúmenes de datos.
+Flexibilidad de Esquema: No requieren un esquema predefinido, permitiendo cambios en las estructuras de datos sin afectar la disponibilidad.
+Alto Rendimiento: Son optimizadas para tareas específicas, ofreciendo un rendimiento alto en aplicaciones con requisitos de lectura y escritura intensivos.
+Disponibilidad y Partición de Datos: La mayoría de los sistemas NoSQL priorizan la disponibilidad y permiten la replicación y partición de datos en múltiples servidores, lo que garantiza la accesibilidad incluso en caso de fallos.
+
+Porque sirven las bases d edatos SQL 
+Se manejan cantidades de datos grandes, usando varios procesadores en vez de uno solo 
+Mayor velociddad de eficiencia y lectura 
+Persistencia políglota 
+Pasar de objetos a relacional consume tiempo
+
+Teorema de CAP
+Cualquier sistema de bases de datos distribuidos puede tenere únicamente dos de las siguientes 3 propiedades deseables 
+Consistencia 
+Alta disponibilidad 
+Tolerancia a particiones 
+
+Propiedades BASE 
+Basic Availability: Las bases no SQL tienen un alto nuivel de replicación que la hace resistente a fallor, aun asi es consistente 
+SofT State: La consistencia no es una caracterisitica que provea la base, por lo que las imprecisiones son permitidas para optimizar el uso de recursos
+Eventual consistency: En algún punto en el futuro, los datos estará en un estado incosistente.
+Capas de aplicación (Relacional) 
+Interfaz -- Objetos ---- (Transacciones, Catching, Busqueda, Batch, Tablas)----Documentos 
+
+Sharding 
+Debido al tamaño de la información, es necesario poder dividirla en fragmentos razonables, o shards en múltiples servidores de bases de datos. 
+En los sistemas NoSQL, particionar la base en shardings se realiza automaticaente, cuando algun procesadores no puede gestionar su información
+
+Patrones de arquitectura 
