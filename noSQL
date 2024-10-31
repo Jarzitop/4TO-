@@ -50,3 +50,35 @@ Debido al tamaño de la información, es necesario poder dividirla en fragmentos
 En los sistemas NoSQL, particionar la base en shardings se realiza automaticaente, cuando algun procesadores no puede gestionar su información
 
 Patrones de arquitectura 
+Almacenamiento de datos usando una llave que retorna una porción de información 
+No tienen un lenguaje de consulta asociado
+Usos comunes: diccionarios, archivos, imagenes, tablas de lookup 
+
+Beneficios 
+Precisión de niveles de servicio 
+Monitores de servicios de precision 
+Escalabilidad y confiablilidad 
+Portabilidad y bajos costos de operación 
+
+Almacenamiento de grafos
+Almacenamienot de datos con las relaciones entre objetos almacenados. 
+
+Se almacenan nodos, relaciones y propiedas 
+Modelan asociaciones más complejas entre los datos y respoinde a  la algoritmicia tradicional de los grafos
+Beneficios 
+Permite modelar relaciones mas complejas entre datos 
+Son fáciles de replicar, pero no de distribuir 
+Permite hacer consultas para hallar caminos mpas cortos, nodos vecinos, similitudes, creación de clústers, grados de separación
+
+Almacenamiento de columnnas 
+Está basado en el almacenamiento llave-valor, estructurando esquemas 
+Estas bases de están optimizadas para operacionesa nivel de columnas o grupos de colimnas  
+Diferentes filas pueden tener distintas columnas 
+Es posible agrupar múltiples columnas en super columnas accesibles desde una llave 
+
+
+Almacenamiento de documentos 
+Es el tipo de base más flexible, poderes y popular 
+Permite el almacenamiento e objetos con diferentes fromas y esquemas que son indexados al ser almacenados 
+Un documento es en realidad un árbol que almacena información 
+En lugar de tablas, los documentos son almacenados en colleciones 
